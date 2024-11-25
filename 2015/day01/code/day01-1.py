@@ -1,5 +1,5 @@
-def algo(input):
-    return input.count('(') - input.count(')')
+def algo(input_texte):
+    return input_texte.count('(') - input_texte.count(')')
 
 def test():
     assert algo('(())') == 0
@@ -16,7 +16,7 @@ def test():
 
 def main():
     test()
-    with open('/Users/jackmassey/Desktop/AdventOfCode/2015/day1/input/input.txt', 'r') as f:
+    with open('/Users/jackmassey/Desktop/AdventOfCode/2015/day01/input/input.txt', 'r') as f:
         print(algo(f.read()))
 
 
